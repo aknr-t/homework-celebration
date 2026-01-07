@@ -4,10 +4,6 @@ import ConfettiCannon from 'react-native-confetti-cannon';
 import { Platform, View, Text } from 'react-native';
 
 const Celebration = forwardRef((props, ref: any) => {
-  if (Platform.OS === 'web') {
-    return null; // ConfettiCannon may cause issues on web
-  }
-
   return (
     <ConfettiCannon
       count={200}
