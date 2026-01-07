@@ -1,0 +1,18 @@
+import React, { forwardRef } from 'react';
+import ConfettiCannon from 'react-native-confetti-cannon';
+
+const Celebration = forwardRef((props, ref: any) => {
+  return (
+    <ConfettiCannon
+      count={200}
+      origin={{x: -10, y: 0}}
+      autoStart={false}
+      ref={ref}
+      fadeOut={true}
+      fallSpeed={3000}
+      colors={['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff']}
+    />
+  );
+});
+
+export default Celebration;
